@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	email = work@rohit.page
+	name = Rohit Gohri
+
+; include for all repositories inside collegedunia
+[includeIf "gitdir:~/Projects/work/collegedunia/"]
+	path = ~/.config/git/work
+
+[core]
+  editor = code --wait
+
+[credential]
+	helper = store
