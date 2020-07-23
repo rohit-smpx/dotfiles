@@ -25,8 +25,5 @@ antigen theme agnoster
 # Tell Antigen that you're done.
 antigen apply
 
+source ~/.config/zsh/base/*.zsh
 source ~/.config/zsh/custom/*.zsh
-
-alias zshconfig="vim ~/.zshrc"
-alias zshcustom="vim ~/.config/zsh/custom/custom.zsh"
-alias reloadzsh="source ~/.zshrc"

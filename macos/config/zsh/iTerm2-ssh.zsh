@@ -8,8 +8,7 @@ function tabc() {
 
 # reset the terminal profile to Default  when exit from the ssh session
 function tab-reset() {
-    NAME="Default"
-    echo -e "\033]50;SetProfile=$NAME\a"
+    tabc Default
 }
 
 # selecting different terminal profile according to ssh'ing host
@@ -30,7 +29,6 @@ function colorssh() {
     fi
     command ssh $*
 }
-
 
 # creates an alias to ssh
 # when execute ssh from the terminal it calls to colorssh function
