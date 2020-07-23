@@ -34,3 +34,4 @@ function colorssh() {
 # when execute ssh from the terminal it calls to colorssh function
 alias ssh="colorssh"
 compdef colorssh='ssh'
+echo "SSH Ran"

@@ -1,5 +1,4 @@
 common/config/zsh/antigen.zsh
 common/config/config
 common/config/configstore
-common/config/zsh/custom/*.macos.zsh
-common/config/zsh/custom/custom.zsh
+common/config/zsh/custom

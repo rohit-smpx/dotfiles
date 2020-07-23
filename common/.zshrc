@@ -12,18 +12,20 @@ antigen bundle history
 antigen bundle docker
 antigen bundle docker-compose
 antigen bundle web-search
-# antigen bundle lein
 antigen bundle command-not-found
+
+# For env versions
+# antigen bundle guiferpa/aterminal
+
+antigen bundle $HOME/.config/zsh/base --no-local-clone
+antigen bundle $HOME/.config/zsh/custom --no-local-clone
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
 antigen theme agnoster
-# robbyrussell
 
 # Tell Antigen that you're done.
 antigen apply
 
-source ~/.config/zsh/base/*.zsh
-source ~/.config/zsh/custom/*.zsh

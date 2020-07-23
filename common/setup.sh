@@ -6,7 +6,7 @@ if [ ! -z $CONFIG_DIR ] && [ -d $CONFIG_DIR ]; then
 fi
 
 ZSH_CONFIG_DIR="$CURRENT_DIR/config/zsh"
-mkdir -p $ZSH_CONFIG_DIR
+mkdir -p $ZSH_CONFIG_DIR/custom
 curl -L git.io/antigen > $ZSH_CONFIG_DIR/antigen.zsh
 ln -sv $CURRENT_DIR/config ~/.config
 ln -sv $CURRENT_DIR/.zshrc ~/.zshrc
