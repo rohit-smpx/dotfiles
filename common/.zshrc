@@ -17,14 +17,26 @@ antigen bundle command-not-found
 # For env versions
 # antigen bundle guiferpa/aterminal
 
+antigen bundle arzzen/calc.plugin.zsh
+
+# Syntax highlighting bundle.
+antigen bundle zdharma/fast-syntax-highlighting
+
+# ZSH plugin that reminds you to use existing aliases for commands you just typed.
+antigen bundle MichaelAquilina/zsh-you-should-use
+
 antigen bundle $HOME/.config/zsh/base --no-local-clone
 antigen bundle $HOME/.config/zsh/custom --no-local-clone
 
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
+MACOS_ZSH_FILE=~/.config/zsh/macos.zsh
+if [ -f $MACOS_ZSH_FILE ]; then source $MACOS_ZSH_FILE; fi
+UBUNTU_ZSH_FILE=~/.config/zsh/ubuntu.zsh
+if [ -f $UBUNTU_ZSH_FILE ]; then source $UBUNTU_ZSH_FILE; fi
 
 # Load the theme.
-antigen theme agnoster
+# workaround for https://github.com/zsh-users/antigen/issues/675
+THEME=agnoster
+antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
 
 # Tell Antigen that you're done.
 antigen apply

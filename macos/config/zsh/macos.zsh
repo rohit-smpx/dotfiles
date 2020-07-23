@@ -1,2 +1,3 @@
 antigen bundle jira
-echo "MacOS Ran"
+antigen bundle osx
+
