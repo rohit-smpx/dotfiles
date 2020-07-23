@@ -8,6 +8,10 @@
 [includeIf "gitdir:~/Projects/work/collegedunia/"]
 	path = ~/.config/git/work
 
+; include for all repositories inside collegedunia
+[includeIf "gitdir:~/Projects/collegedunia/"]
+	path = ~/.config/git/work
+
 [core]
   editor = code --wait
 

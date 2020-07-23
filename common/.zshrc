@@ -9,6 +9,9 @@ antigen bundle pip
 antigen bundle wd
 antigen bundle sudo
 antigen bundle history
+antigen bundle docker
+antigen bundle docker-compose
+antigen bundle web-search
 # antigen bundle lein
 antigen bundle command-not-found
 
@@ -21,3 +24,9 @@ antigen theme agnoster
 
 # Tell Antigen that you're done.
 antigen apply
+
+source ~/.config/zsh/custom/*.zsh
+
+alias zshconfig="vim ~/.zshrc"
+alias zshcustom="vim ~/.config/zsh/custom/custom.zsh"
+alias reloadzsh="source ~/.zshrc"
