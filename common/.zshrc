@@ -32,6 +32,8 @@ MACOS_ZSH_FILE=~/.config/zsh/macos.zsh
 if [ -f $MACOS_ZSH_FILE ]; then source $MACOS_ZSH_FILE; fi
 UBUNTU_ZSH_FILE=~/.config/zsh/ubuntu.zsh
 if [ -f $UBUNTU_ZSH_FILE ]; then source $UBUNTU_ZSH_FILE; fi
+CUSTOM_ZSHRC_FILE=~/.config/zsh/custom.zsh
+if [ -f $CUSTOM_ZSHRC_FILE ]; then source $CUSTOM_ZSHRC_FILE; fi
 
 # Load the theme.
 # workaround for https://github.com/zsh-users/antigen/issues/675

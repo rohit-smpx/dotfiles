@@ -2,5 +2,6 @@ common/config/zsh/antigen.zsh
 common/config/config
 common/config/configstore
 common/config/zsh/custom
+common/config/zsh/custom.zsh
 common/config/zsh/macos.zsh
 common/config/zsh/ubuntu.zsh
