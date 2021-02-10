@@ -5,12 +5,21 @@
 	name = Rohit Gohri
 
 ; include for all repositories inside collegedunia
-[includeIf "gitdir:~/Projects/work/collegedunia/"]
-	path = ~/.config/git/work
+; [includeIf "gitdir:~/Projects/work/collegedunia/"]
+; 	path = ~/.config/git/work
 
 ; include for all repositories inside collegedunia
-[includeIf "gitdir:~/Projects/collegedunia/"]
+; [includeIf "gitdir:~/Projects/collegedunia/"]
+;	path = ~/.config/git/work
+
+; include for all repositories inside honestfoodcompany
+[includeIf "gitdir:~/Projects/work/honestfoodcompany/"]
 	path = ~/.config/git/work
+
+; include for all repositories inside honestfoodcompany
+[includeIf "gitdir:~/Projects/honestfoodcompany/"]
+	path = ~/.config/git/work
+
 
 [core]
   editor = code --wait
