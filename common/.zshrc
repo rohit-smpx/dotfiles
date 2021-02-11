@@ -25,6 +25,9 @@ antigen bundle zdharma/fast-syntax-highlighting
 # ZSH plugin that reminds you to use existing aliases for commands you just typed.
 antigen bundle MichaelAquilina/zsh-you-should-use
 
+# NVM for ZSH
+antigen bundle lukechilds/zsh-nvm
+
 antigen bundle $HOME/.config/zsh/base --no-local-clone
 antigen bundle $HOME/.config/zsh/custom --no-local-clone
 
