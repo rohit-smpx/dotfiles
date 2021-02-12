@@ -7,6 +7,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle pip
 antigen bundle wd
+antigen bundle yarn
 antigen bundle sudo
 antigen bundle history
 antigen bundle docker
